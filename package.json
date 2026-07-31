@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "report:allure": "allure generate allure-results --clean && allure open"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BibhuSundar/LearningPlaywrightFundamentals2x-Bibhu.git"
@@ -17,7 +19,11 @@
   },
   "homepage": "https://github.com/BibhuSundar/LearningPlaywrightFundamentals2x-Bibhu#readme",
   "devDependencies": {
-    "@playwright/test": "^1.62.0",
-    "@types/node": "^26.1.2"
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.1.2",
+    "allure-playwright": "^3.10.2"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.43.0"
   }
 }

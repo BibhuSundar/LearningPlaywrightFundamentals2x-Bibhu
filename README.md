@@ -1,6 +1,6 @@
 # Learning Playwright Fundamentals 2x
 
-Playwright test automation project with cross-browser testing (Chromium, Firefox, WebKit).
+Playwright test automation project with cross-browser testing (Chromium) plus Allure and a custom TTA HTML reporter.
 
 ## Setup
 
@@ -17,10 +17,31 @@ npx playwright test --headed
 npx playwright test --ui
 ```
 
-## Report
+Run a single test file:
 
 ```bash
-npx playwright show-report
+npx playwright test tests/05_Allure_Reporting/smapletestcase_customreport.spec.ts
+```
+
+## Allure Report
+
+Tests write results to `allure-results/` via the `allure-playwright` reporter.
+
+Generate and view the Allure report:
+
+```bash
+npm run report:allure
+# or
+npx allure serve allure-results
+```
+
+## Custom TTA Report
+
+A custom HTML reporter lives in `utils/CustomReporter.ts`. Run any test with it to generate a report under `tta-report/`:
+
+```bash
+npx playwright test tests/05_Allure_Reporting/smapletestcase_customreport.spec.ts --reporter=line,./utils/CustomReporter.ts
+open tta-report/index.html
 ```
 
 ## Project Structure
