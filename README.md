@@ -23,6 +23,24 @@ Run a single test file:
 npx playwright test tests/05_Allure_Reporting/smapletestcase_customreport.spec.ts
 ```
 
+## Test Suites
+
+Tests are organized by chapter under `tests/`:
+
+| Chapter | Topic | Test Files |
+| --- | --- | --- |
+| 06 | Multiple Elements | `250_Multi_Element`, `251_Multi_Element_Direct` |
+| 07 | Web Tables | `252`–`258` |
+| 08 | Select & Custom Dropdown | `259`–`261` |
+| 09 | Frames & Iframes | `262`–`264` |
+| 10 | Keyboard, Hover, Drag & Drop | `265`–`269` |
+| 11 | JS Alerts | `270` |
+| 12 | SVG Handling | `271`–`273` |
+| 13 | Shadow DOM | `274` |
+| 14 | File Upload | `275`, `276` |
+| 15 | File Download | `277` |
+| 16 | Scroll to Element | `278` |
+
 ## Allure Report
 
 Tests write results to `allure-results/` via the `allure-playwright` reporter.
