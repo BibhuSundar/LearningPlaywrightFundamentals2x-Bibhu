@@ -40,6 +40,10 @@ Tests are organized by chapter under `tests/`:
 | 14 | File Upload | `275`, `276` |
 | 15 | File Download | `277` |
 | 16 | Scroll to Element | `278` |
+| 17 | Expect Assertions | `279`–`283` |
+| 18 | Test Hooks | `284`–`290` |
+| 19 | Data Driven Testing | `291`–`304` (JSON, CSV, YAML, MySQL, XLSX, Faker) |
+| 20 | Page Object Model | `305`, `306` |
 
 ## Allure Report
 
